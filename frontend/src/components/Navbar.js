@@ -37,12 +37,12 @@ const Navbar = () => {
         </Link>
 
         <div className={`nav-menu ${menuOpen ? 'active' : ''}`}>
-          <a onClick={() => scrollToSection('home')} className="nav-link">Home</a>
-          <a onClick={() => scrollToSection('about')} className="nav-link">About</a>
-          <a onClick={() => scrollToSection('skills')} className="nav-link">Skills</a>
-          <a onClick={() => scrollToSection('projects')} className="nav-link">Projects</a>
-          <a onClick={() => scrollToSection('blog')} className="nav-link">Blog</a>
-          <a onClick={() => scrollToSection('contact')} className="nav-link">Contact</a>
+          <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} className="nav-link">Home</a>
+          <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="nav-link">About</a>
+          <a href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }} className="nav-link">Skills</a>
+          <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }} className="nav-link">Projects</a>
+          <a href="#blog" onClick={(e) => { e.preventDefault(); scrollToSection('blog'); }} className="nav-link">Blog</a>
+          <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="nav-link">Contact</a>
         </div>
 
         <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>

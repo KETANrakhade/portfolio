@@ -1,11 +1,8 @@
-import { useEffect, useRef } from 'react';
-import './CustomCursor.css';
+import { useEffect } from 'react';import './CustomCursor.css';
 
 const TRAIL_LENGTH = 18;
 
 const CustomCursor = () => {
-  const trailRefs = useRef([]);
-
   useEffect(() => {
     const dot = document.querySelector('.cursor-dot');
     const outline = document.querySelector('.cursor-outline');
