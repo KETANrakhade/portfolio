@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { FaClock, FaArrowRight, FaExternalLinkAlt } from 'react-icons/fa';
+import API_BASE_URL from '../config';
 import './Blog.css';
 
 const Blog = () => {
@@ -15,7 +16,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get('/api/blogs');
+        const response = await axios.get(`${API_BASE_URL}/api/blogs`);
         setBlogs(response.data);
         setLoading(false);
       } catch (error) {

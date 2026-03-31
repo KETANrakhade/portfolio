@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import axios from 'axios';
 import { FaArrowLeft, FaClock, FaCalendar, FaUser } from 'react-icons/fa';
+import API_BASE_URL from '../config';
 import './BlogPage.css';
 
 const BlogPage = () => {
@@ -14,7 +15,7 @@ const BlogPage = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`/api/blogs/${slug}`);
+        const response = await axios.get(`${API_BASE_URL}/api/blogs/${slug}`);
         setBlog(response.data);
         setLoading(false);
       } catch (error) {
