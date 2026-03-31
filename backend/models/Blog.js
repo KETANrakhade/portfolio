@@ -37,6 +37,10 @@ const BlogSchema = new mongoose.Schema({
   tags: [{
     type: String,
   }],
+  hashnodeUrl: {
+    type: String,
+    default: '',
+  },
 }, {
   timestamps: true,
 });

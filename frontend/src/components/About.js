@@ -10,7 +10,7 @@ const About = () => {
   const highlights = [
     {
       icon: <FaCode />,
-      title: 'Passionate about Full-Stack Development',
+      title: 'Passionate about Mern Stack Development',
       description: 'Building end-to-end solutions with modern technologies and best practices.',
     },
     {

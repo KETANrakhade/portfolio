@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { FaClock, FaArrowRight } from 'react-icons/fa';
+import { FaClock, FaArrowRight, FaExternalLinkAlt } from 'react-icons/fa';
 import './Blog.css';
 
 const Blog = () => {
@@ -95,6 +95,17 @@ const Blog = () => {
                   <button className="read-more">
                     Read More <FaArrowRight />
                   </button>
+                  {blog.hashnodeUrl && (
+                    <a
+                      className="hashnode-link"
+                      href={blog.hashnodeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Read on Hashnode <FaExternalLinkAlt />
+                    </a>
+                  )}
                 </div>
               </motion.div>
             ))}
