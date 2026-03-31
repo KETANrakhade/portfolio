@@ -172,8 +172,8 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
       >
-        <div className="mouse"></div>
-        <p>Scroll Down</p>
+        {/* <div className="mouse"></div>
+        <p>Scroll Down</p> */}
       </motion.div>
     </section>
   );

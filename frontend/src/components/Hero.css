@@ -304,20 +304,90 @@
 }
 
 @media (max-width: 768px) {
-  .hero-name {
-    font-size: 40px;
+  .hero {
+    padding: 80px 5% 60px;
   }
 
-  .typing-text {
-    font-size: 20px;
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
   }
 
-  .hero-description {
+  .hero-3d {
+    order: -1;
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
+  }
+
+  .floating-cube {
+    width: 110px;
+    height: 110px;
+  }
+
+  .cube-face {
+    width: 110px;
+    height: 110px;
+  }
+
+  .cube-face.front  { transform: translateZ(55px); }
+  .cube-face.back   { transform: rotateY(180deg) translateZ(55px); }
+  .cube-face.left   { transform: rotateY(-90deg) translateZ(55px); }
+  .cube-face.right  { transform: rotateY(90deg) translateZ(55px); }
+  .cube-face.top    { transform: rotateX(90deg) translateZ(55px); }
+  .cube-face.bottom { transform: rotateX(-90deg) translateZ(55px); }
+
+  .orbit-ring-1 { width: 200px; height: 200px; }
+  .orbit-ring-2 { width: 250px; height: 250px; }
+
+  .orbit-1 { --radius: 100px; }
+  .orbit-2 { --radius: 125px; }
+
+  .orbit-icon-inner {
+    width: 32px;
+    height: 32px;
     font-size: 16px;
   }
 
-  .btn {
-    padding: 12px 30px;
+  .hero-greeting {
+    font-size: 18px;
+  }
+
+  .hero-role {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .hero-name {
+    font-size: 36px;
+  }
+
+  .hero-typing {
+    min-height: 60px;
+  }
+
+  .typing-text {
+    font-size: 18px;
+  }
+
+  .hero-description {
     font-size: 14px;
+    line-height: 1.7;
+    margin: 0 auto 30px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+
+  .scroll-indicator {
+    bottom: 20px;
   }
 }

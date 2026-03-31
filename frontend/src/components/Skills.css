@@ -4,7 +4,7 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
 }
 
@@ -89,14 +89,24 @@
   }
 
   .category-title {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  .skill-card {
+    padding: 15px;
+    gap: 15px;
   }
 
   .skill-icon {
-    font-size: 32px;
+    font-size: 28px;
+    min-width: 28px;
   }
 
   .skill-info h4 {
-    font-size: 16px;
+    font-size: 15px;
+  }
+
+  .skill-level {
+    font-size: 12px;
   }
 }

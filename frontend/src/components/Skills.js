@@ -34,6 +34,7 @@ const Skills = () => {
       skills: [
         { name: 'MongoDB', icon: <SiMongodb />, level: 92, color: '#47A248' },
         { name: 'Git', icon: <FaGitAlt />, level: 90, color: '#F05032' },
+         { name: 'SQL', icon: <FaGitAlt />, level: 60, color: '#ab6559ff' }
       ],
     },
   ];
