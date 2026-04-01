@@ -332,12 +332,33 @@
 @media (max-width: 768px) {
   .flip-card {
     height: auto;
-    min-height: 700px;
   }
 
   .flip-front,
   .flip-back {
     position: relative;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    transform: none !important;
+    transition: none;
+  }
+
+  .flip-back {
+    display: none;
+  }
+
+  .flip-card.flipped .flip-front {
+    display: none;
+  }
+
+  .flip-card.flipped .flip-back {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flip-card {
+    transform: none !important;
+    transition: none;
   }
 
   .card-image-wrap {
