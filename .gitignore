@@ -4,4 +4,5 @@ backend/node_modules/
 frontend/build/
 .env
 backend/.env
+frontend/.env
 .DS_Store
